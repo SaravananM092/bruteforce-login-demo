@@ -36,7 +36,8 @@ I strongly recommend preferring controlled training platforms (Juice Shop/DVWA) 
 #run this line by line
 
 **1)**`sudo apt update
-sudo apt install -y unzip python3 python3-venv python3-pip sqlite3 build-essential libssl-dev libffi-dev python3-dev
+sudo apt install -y unzip python3 
+python3-venv python3-pip sqlite3 build-essential libssl-dev libffi-dev python3-dev
 `
 
 **2)**# adjust path to your zip file`
