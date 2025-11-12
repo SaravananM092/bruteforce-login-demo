@@ -39,7 +39,8 @@ I strongly recommend preferring controlled training platforms (Juice Shop/DVWA) 
 sudo apt install -y unzip python3 python3-venv python3-pip sqlite3 build-essential libssl-dev libffi-dev python3-dev
 `
 
-**2)**# adjust path to your zip file`unzip /path/to/secure_login.zip -d ~/projects
+**2)**# adjust path to your zip file`
+unzip /path/to/secure_login.zip -d ~/projects
 cd ~/projects/secure_login
 ls -la
 `
