@@ -32,3 +32,49 @@ OWASP Juice Shop / DVWA / WebGoat — intentionally vulnerable apps for practici
 Hydra / Medusa / Burp Intruder — automated password-guessing tools. Only mention if explicitly stating “for authorized lab use only”; do not include usage instructions or parameters in public docs.
 
 I strongly recommend preferring controlled training platforms (Juice Shop/DVWA) over raw brute-force tools.
+
+#run this line by line
+
+**1)**`sudo apt update
+sudo apt install -y unzip python3 python3-venv python3-pip sqlite3 build-essential libssl-dev libffi-dev python3-dev
+`
+
+**2)**# adjust path to your zip file`unzip /path/to/secure_login.zip -d ~/projects
+cd ~/projects/secure_login
+ls -la
+`
+
+**3)**`python3 -m venv .venv
+source .venv/bin/activate
+`
+
+**4)**`pip install --upgrade pip
+pip install -r requirements.txt
+`
+
+**5)**`pip install bcrypt`
+
+**6)**`sqlite3 app.db < schema.sql`
+
+**7)**`python3 create_admin.py admin StrongPass123`
+
+**8)**`python3 app.py`
+
+**9)**` * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)`
+
+**10)** # Open a browser on the Kali machine and go to:
+`http://127.0.0.1:5000/login`
+
+
+
+
+
+
+
+
+
+
+
+
+
+
